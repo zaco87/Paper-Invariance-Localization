@@ -1,6 +1,15 @@
 # Paper-Invariance-Localization
 Code for the paper: Invariant echo localization using bat pinnae
 
+TLDR:
+load the file matlab_data_variables.mat to your workspace
+use the final variables:
+
+"A_HRTF_ALMKERB{i,Lnt,Mnt,Knt,Ent,Rnt,Bnt}" -> this is the ILD_max vector
+i=1:24 (azimuth angle. 1-> -60deg, 24-> +60deg)
+Lnt=1:2 (1=straight microphone. 2= downward rotated microphone (relevant for "with pinnae" condition only))
+
+
 list of main functions
 
 1. main_version_Q1.m is the first script to run. it takes all the data  and organize the signals in variables
