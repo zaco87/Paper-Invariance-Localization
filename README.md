@@ -2,7 +2,7 @@
 Code for the paper: Invariant echo localization using bat pinnae
 
 TLDR:
-load the file matlab_data_variables.mat to your workspace
+load the file A_HRTF_variable.mat to your workspace (full workspace is too large for sharing ~3Gb)
 use the final variables:
 
 "A_HRTF_ALMKERB{i,Lnt,Mnt,Knt,Ent,Rnt,Bnt}" -> this is the ILD_max vector
