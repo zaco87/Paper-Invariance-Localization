@@ -6,9 +6,13 @@ load the file matlab_data_variables.mat to your workspace
 use the final variables:
 
 "A_HRTF_ALMKERB{i,Lnt,Mnt,Knt,Ent,Rnt,Bnt}" -> this is the ILD_max vector
-i=1:24 (azimuth angle. 1-> -60deg, 24-> +60deg)
-Lnt=1:2 (1=straight microphone. 2= downward rotated microphone (relevant for "with pinnae" condition only))
-
+i=1:24 (azimuth angle. 1-> -60deg, 24-> +60deg, linear distribution. can use the formula: i=An_angle=(-60+((An-1)*120/23)))
+Lnt=1:2 (pinnae elevation. 1 -> straight microphone. 2 ->  downward rotated microphone (relevant for "with pinnae" condition only))
+Mnt=1:2 (use only Mnt=2. this is the GRAS microphone)
+Knt = 1:5 (chirp number. the experiment had 5 transmitted chirps in every condition. use only knt=1:2, other data (3:5) is not verified)
+Ent = 1:1 (pinnae condition. 1 -> with pinnae, 2 -> no pinnae)
+Rnt = 1:4 (target distance. 1 -> 0.5 m, 2 -> 1.0m, 3 -> 1.5m, 4 -> 2.0m. use only Rnt=1:3. Rnt=4 is not verified)
+Bnt = 1:3 (target object type. 1 -> ball. 2 -> cylinder. 3 -> plant)
 
 list of main functions
 
