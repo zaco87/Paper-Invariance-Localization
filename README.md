@@ -2,8 +2,12 @@
 Code for the paper: Invariant echo localization using bat pinnae
 
 TLDR:
-load the file A_HRTF_variable.mat to your workspace (full workspace is too large for sharing ~3Gb)
-use the final variables:
+load the file A_HRTF_variable.mat to your workspace 
+(full workspace is too large for sharing on GitHub ~3Gb - so it is stored on Zenodo: https://doi.org/10.5281/zenodo.7794455 )
+
+use the final variable:
+
+A_HRTF_ALMKERB - is the ILD vector of for a system with the provided parameters as mentioned bellow.
 
 "A_HRTF_ALMKERB{i,Lnt,Mnt,Knt,Ent,Rnt,Bnt}" -> this is the ILD_max vector
 i=1:24 (azimuth angle. 1-> -60deg, 24-> +60deg, linear distribution. can use the formula: i=An_angle=(-60+((An-1)*120/23)))
